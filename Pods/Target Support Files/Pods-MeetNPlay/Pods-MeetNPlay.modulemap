@@ -1,0 +1,6 @@
+framework module Pods_MeetNPlay {
+  umbrella header "Pods-MeetNPlay-umbrella.h"
+
+  export *
+  module * { export * }
+}

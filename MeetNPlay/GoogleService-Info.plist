@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>523671135875-hhhgtrljqjhrl6bdujjdacrr14ta6isv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.523671135875-hhhgtrljqjhrl6bdujjdacrr14ta6isv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD1RplO94_daS93z7N6Ilf86mtU1uVmT0s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>523671135875</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vms.MeetNPlay</string>
+	<key>PROJECT_ID</key>
+	<string>meetnplay-v7594j</string>
+	<key>STORAGE_BUCKET</key>
+	<string>meetnplay-v7594j.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:523671135875:ios:edab7ca78613e9ee</string>
+	<key>DATABASE_URL</key>
+	<string>https://meetnplay-v7594j.firebaseio.com</string>
+</dict>
+</plist>
