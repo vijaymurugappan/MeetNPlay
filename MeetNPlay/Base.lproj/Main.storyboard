@@ -217,7 +217,7 @@
                                                                     <outlet property="delegate" destination="xnY-cd-htr" id="wCW-Vu-2DV"/>
                                                                 </connections>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="M / F" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wir-yk-zJL">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="M / F" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wir-yk-zJL">
                                                                 <rect key="frame" x="35" y="208" width="97" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <nil key="textColor"/>
@@ -230,10 +230,18 @@
                                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Zw-y5-MO8">
                                                                 <rect key="frame" x="152" y="377" width="189" height="99"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="xnY-cd-htr" id="23G-3E-gox"/>
+                                                                    <outlet property="delegate" destination="xnY-cd-htr" id="OVD-x9-aWj"/>
+                                                                </connections>
                                                             </pickerView>
                                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OpZ-fG-5Jf">
                                                                 <rect key="frame" x="140" y="206" width="193" height="55"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="xnY-cd-htr" id="bNH-Lz-cXf"/>
+                                                                    <outlet property="delegate" destination="xnY-cd-htr" id="FSI-NG-xML"/>
+                                                                </connections>
                                                             </pickerView>
                                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ndd-dW-zzN">
                                                                 <rect key="frame" x="35" y="339" width="307" height="30"/>
@@ -253,10 +261,10 @@
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6w-L6-M7C"/>
+                                                                    <action selector="registerClicked:" destination="xnY-cd-htr" eventType="touchUpInside" id="cH2-a7-Jyy"/>
                                                                 </connections>
                                                             </button>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkE-0W-wDO">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkE-0W-wDO">
                                                                 <rect key="frame" x="35" y="117" width="97" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <nil key="textColor"/>
@@ -266,27 +274,41 @@
                                                                     <outlet property="delegate" destination="xnY-cd-htr" id="hdV-O7-qRU"/>
                                                                 </connections>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Preferred Day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-AP-eDq">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Preferred Day" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-AP-eDq">
                                                                 <rect key="frame" x="35" y="377" width="109" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="xnY-cd-htr" id="toR-0Y-OlF"/>
+                                                                </connections>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Favorite Sport" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-D1-ABS">
+                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Favorite Sport" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-D1-ABS">
                                                                 <rect key="frame" x="35" y="485" width="109" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="xnY-cd-htr" id="2nk-bD-cBL"/>
+                                                                </connections>
                                                             </textField>
                                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yhn-o0-fuT">
                                                                 <rect key="frame" x="140" y="117" width="201" height="93"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="xnY-cd-htr" id="8US-OB-dTM"/>
+                                                                    <outlet property="delegate" destination="xnY-cd-htr" id="Du9-4i-znU"/>
+                                                                </connections>
                                                             </pickerView>
                                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXy-pO-6rh">
                                                                 <rect key="frame" x="152" y="484" width="189" height="93"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="xnY-cd-htr" id="z5q-XK-Ogt"/>
+                                                                    <outlet property="delegate" destination="xnY-cd-htr" id="JLJ-Wf-IzE"/>
+                                                                </connections>
                                                             </pickerView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Badminton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-wa-LF5">
                                                                 <rect key="frame" x="42" y="588" width="120" height="120"/>
@@ -336,39 +358,69 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-1f-ghj">
+                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-1f-ghj">
                                                                 <rect key="frame" x="40" y="713" width="125" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="badSliderChanged:" destination="xnY-cd-htr" eventType="valueChanged" id="ywz-6U-qZh"/>
+                                                                </connections>
                                                             </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DpD-QM-buP">
+                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="DpD-QM-buP">
                                                                 <rect key="frame" x="210" y="713" width="125" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="socSliderChanged:" destination="xnY-cd-htr" eventType="valueChanged" id="ODg-fn-QBe"/>
+                                                                </connections>
                                                             </slider>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooc-NN-EmZ">
-                                                                <rect key="frame" x="251" y="657" width="42" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooc-NN-EmZ">
+                                                                <rect key="frame" x="251" y="657" width="44" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22I-ra-Do6">
-                                                                <rect key="frame" x="81" y="657" width="42" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22I-ra-Do6">
+                                                                <rect key="frame" x="81" y="657" width="44" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIN-Mk-yYK">
-                                                                <rect key="frame" x="166" y="821" width="42" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIN-Mk-yYK">
+                                                                <rect key="frame" x="166" y="821" width="44" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xMZ-48-Ye3">
+                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="xMZ-48-Ye3">
                                                                 <rect key="frame" x="127" y="875" width="122" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="bowlSliderChanged:" destination="xnY-cd-htr" eventType="valueChanged" id="bPb-dl-Cpn"/>
+                                                                </connections>
                                                             </slider>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ox7-Kw-Kis">
+                                                                <rect key="frame" x="78" y="598" width="49" height="31"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="badSwitchChanged:" destination="xnY-cd-htr" eventType="valueChanged" id="eJ9-hr-6eg"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nTg-n1-WjQ">
+                                                                <rect key="frame" x="248" y="598" width="49" height="31"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="socSwitchChanged:" destination="xnY-cd-htr" eventType="valueChanged" id="efG-cv-QFe"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-Ik-5Or">
+                                                                <rect key="frame" x="163" y="760" width="49" height="31"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="bowlSwitchChanged:" destination="xnY-cd-htr" eventType="valueChanged" id="9f6-P1-lU5"/>
+                                                                </connections>
+                                                            </switch>
                                                         </subviews>
                                                     </view>
                                                     <blurEffect style="light"/>
@@ -406,6 +458,31 @@
                     </view>
                     <navigationItem key="navigationItem" title="SIGN UP" id="j0v-LT-aFC"/>
                     <size key="freeformSize" width="320" height="1050"/>
+                    <connections>
+                        <outlet property="agePicker" destination="Yhn-o0-fuT" id="wPC-4e-sqV"/>
+                        <outlet property="ageTextField" destination="gkE-0W-wDO" id="7Id-js-jXZ"/>
+                        <outlet property="badmintonLabel" destination="22I-ra-Do6" id="lZo-1P-m9W"/>
+                        <outlet property="badmintonSlider" destination="ivf-1f-ghj" id="qs8-JE-em2"/>
+                        <outlet property="badmintonSwitch" destination="Ox7-Kw-Kis" id="DQT-ct-G5l"/>
+                        <outlet property="bowlingLabel" destination="LIN-Mk-yYK" id="GGZ-6U-foK"/>
+                        <outlet property="bowlingSlider" destination="xMZ-48-Ye3" id="KFb-1H-h8s"/>
+                        <outlet property="bowlingSwitch" destination="bcM-Ik-5Or" id="i4L-YY-ugc"/>
+                        <outlet property="contactTextField" destination="FYf-x2-BWs" id="GNS-U8-H5d"/>
+                        <outlet property="dayPicker" destination="6Zw-y5-MO8" id="fAY-zJ-tbi"/>
+                        <outlet property="dayTextField" destination="cZa-AP-eDq" id="4TD-Y3-dT5"/>
+                        <outlet property="nameTextField" destination="58F-jQ-SX9" id="IHm-Da-7oT"/>
+                        <outlet property="passwordTextField" destination="Ndd-dW-zzN" id="6sx-cT-CbH"/>
+                        <outlet property="registerBtn" destination="ceQ-RL-bzt" id="eB7-gs-XfC"/>
+                        <outlet property="scrollView" destination="7wV-7q-hyA" id="gU2-X6-3D1"/>
+                        <outlet property="sexPicker" destination="OpZ-fG-5Jf" id="vnP-U7-i2w"/>
+                        <outlet property="sexTextField" destination="wir-yk-zJL" id="lAG-MW-kiy"/>
+                        <outlet property="soccerLabel" destination="ooc-NN-EmZ" id="6bS-VW-9rn"/>
+                        <outlet property="soccerSlider" destination="DpD-QM-buP" id="fgH-he-qD8"/>
+                        <outlet property="soccerSwitch" destination="nTg-n1-WjQ" id="oTV-GP-KC3"/>
+                        <outlet property="sportPicker" destination="QXy-pO-6rh" id="GuD-Qz-blf"/>
+                        <outlet property="sportTextField" destination="0nP-D1-ABS" id="Gve-jT-vEM"/>
+                        <outlet property="userTextField" destination="gS7-g5-iRd" id="cmi-Xw-WL8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRY-gX-Pw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

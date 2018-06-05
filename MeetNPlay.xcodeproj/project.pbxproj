@@ -20,6 +20,7 @@
 		2D34640D20C0E6F100424B45 /* MeetNPlay2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D34640C20C0E6F000424B45 /* MeetNPlay2.png */; };
 		2D34640F20C0EEFA00424B45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D34640E20C0EEF900424B45 /* GoogleService-Info.plist */; };
 		2D3C16CE20C234DA002194AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C16CD20C234DA002194AF /* SignUpViewController.swift */; };
+		2D77F57820C616B9004CC830 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D77F57720C616B9004CC830 /* User.swift */; };
 		40DA3F6FC5B2870B1054596E /* Pods_MeetNPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044CCFC3BBE9DFC47C549431 /* Pods_MeetNPlay.framework */; };
 		F3C93F5728292F91516C3EBA /* Pods_MeetNPlayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED86307CD435EC7357A0332 /* Pods_MeetNPlayUITests.framework */; };
 		F84C11180D24D1BE8B224D8B /* Pods_MeetNPlayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7011296E08B373B337BC2 /* Pods_MeetNPlayTests.framework */; };
@@ -64,6 +65,7 @@
 		2D34640C20C0E6F000424B45 /* MeetNPlay2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeetNPlay2.png; sourceTree = "<group>"; };
 		2D34640E20C0EEF900424B45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D3C16CD20C234DA002194AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2D77F57720C616B9004CC830 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5E99244D4E96BBE7AE2AC90D /* Pods-MeetNPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetNPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetNPlay/Pods-MeetNPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		7B82019FE3C03034A5B9450B /* Pods-MeetNPlayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetNPlayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetNPlayUITests/Pods-MeetNPlayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED86307CD435EC7357A0332 /* Pods_MeetNPlayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetNPlayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				2D3463D620C0CE9300424B45 /* AppDelegate.swift */,
 				2D3463D820C0CE9300424B45 /* LoginViewController.swift */,
 				2D3C16CD20C234DA002194AF /* SignUpViewController.swift */,
+				2D77F57720C616B9004CC830 /* User.swift */,
 				2D3463DA20C0CE9300424B45 /* Main.storyboard */,
 				2D3463DD20C0CE9400424B45 /* Assets.xcassets */,
 				2D3463DF20C0CE9400424B45 /* LaunchScreen.storyboard */,
@@ -402,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D77F57820C616B9004CC830 /* User.swift in Sources */,
 				2D3C16CE20C234DA002194AF /* SignUpViewController.swift in Sources */,
 				2D3463D920C0CE9300424B45 /* LoginViewController.swift in Sources */,
 				2D3463D720C0CE9300424B45 /* AppDelegate.swift in Sources */,
@@ -462,6 +466,7 @@
 		2D3463F920C0CE9500424B45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -522,6 +527,7 @@
 		2D3463FA20C0CE9500424B45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

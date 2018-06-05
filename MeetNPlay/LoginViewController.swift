@@ -21,6 +21,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         self.navigationController?.isNavigationBarHidden = false
@@ -54,7 +59,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         Auth.auth().signIn(withEmail: userTextField.text!, password: passwordTextField.text!, completion: {
             (user,error) in
             if (error == nil) {
-                self.performSegue(withIdentifier: "profile", sender: self)
+                //self.performSegue(withIdentifier: "profile", sender: self)
+                print("Success")
                 return
             }
             self.showAlert(Title: "INCORRECT", Desc: "Username or Password Incorrect")
