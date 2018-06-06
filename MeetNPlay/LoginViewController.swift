@@ -15,15 +15,31 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var uid = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        if UserDefaults.standard.bool(forKey: "isUserLoggedIn") == true {
+            self.uid = UserDefaults.standard.string(forKey: "userID")!
+            UIView.setAnimationsEnabled(false)
+            self.performSegue(withIdentifier: "profile", sender: self)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        if UserDefaults.standard.bool(forKey: "isUserLoggedIn") == true {
+            self.uid = UserDefaults.standard.string(forKey: "userID")!
+            UIView.setAnimationsEnabled(false)
+            self.performSegue(withIdentifier: "profile", sender: self)
+        }
         self.navigationController?.isNavigationBarHidden = true
+        userTextField.text = ""
+        passwordTextField.text = ""
+        userTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -59,8 +75,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         Auth.auth().signIn(withEmail: userTextField.text!, password: passwordTextField.text!, completion: {
             (user,error) in
             if (error == nil) {
-                //self.performSegue(withIdentifier: "profile", sender: self)
-                print("Success")
+                self.uid = (user?.uid)!
+                UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+                UserDefaults.standard.set(self.uid, forKey: "userID")
+                UserDefaults.standard.synchronize()
+                UIView.setAnimationsEnabled(false)
+                self.performSegue(withIdentifier: "profile", sender: self)
                 return
             }
             self.showAlert(Title: "INCORRECT", Desc: "Username or Password Incorrect")
@@ -75,6 +95,15 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
         alertController.addAction(alertAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "profile" {
+            let tabCtrl = segue.destination as! UITabBarController
+            let nav = tabCtrl.viewControllers![0] as! UINavigationController
+            let vc = nav.viewControllers[0] as! ProfileViewController
+            vc.uid = uid
+        }
     }
 
 }

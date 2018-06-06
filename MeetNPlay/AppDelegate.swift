@@ -42,6 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension UITabBarController {
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font:UIFont(name: "Helvetica", size: 11.0)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font:UIFont(name: "Helvetica", size: 11.0)!], for: .highlighted)
+    }
 }
 

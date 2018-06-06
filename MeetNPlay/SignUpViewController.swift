@@ -189,6 +189,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
                     bowlingref.setValue(item.Bowling)
                     soccerref.setValue(item.Soccer)
                     item.id(uid: (user?.uid)!)
+                    self.performSegue(withIdentifier: "Login", sender: self)
+                }
+                else {
+                    let alertVC = UIAlertController(title: "Error",message: error?.localizedDescription,preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "Ok",style:.default,handler: nil)
+                    alertVC.addAction(okAction)
+                    self.present(alertVC,animated: true,completion: nil)
                 }
             })
         }
