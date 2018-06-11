@@ -61,6 +61,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewWillAppear(true)
         self.tabBarController?.navigationItem.setHidesBackButton(true, animated: true)
         self.tabBarController?.navigationItem.title = viewTitle
+        let logoutBtn = UIBarButtonItem(title: "LOGOUT", style: .plain, target: self, action: #selector(logoutPressed))
+        logoutBtn.tintColor = UIColor.black
+        self.tabBarController?.navigationItem.leftBarButtonItem = logoutBtn
     }
     
     @objc func logoutPressed() {
