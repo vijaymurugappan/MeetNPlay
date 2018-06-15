@@ -52,7 +52,7 @@ class VenueViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
     }
     
     @IBAction func searchClicked(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "loc", sender: self)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -71,14 +71,13 @@ class VenueViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
         sportTv.text = sportData[row]
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "loc") {
+            let vcTemp = segue.destination as! VenueMapViewController
+            vcTemp.radius = radiusTv.text!
+            vcTemp.rating = ratingTv.text!
+            vcTemp.game = sportTv.text!
+        }
     }
-    */
 
 }

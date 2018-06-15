@@ -29,6 +29,10 @@
 		2D8E968520C78C6400B97D3B /* user_male.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8E968420C78C6300B97D3B /* user_male.png */; };
 		2D8E968720C7CC7B00B97D3B /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E968620C7CC7B00B97D3B /* LobbyViewController.swift */; };
 		2D8E968920C8D64C00B97D3B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E968820C8D64C00B97D3B /* PlayerViewController.swift */; };
+		2DB1FE1F20D2F42100C49D93 /* PlayerMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1FE1E20D2F42100C49D93 /* PlayerMapViewController.swift */; };
+		2DB1FE2120D3005500C49D93 /* VenueMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1FE2020D3005500C49D93 /* VenueMapViewController.swift */; };
+		2DB1FE2320D3030E00C49D93 /* ico-find.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB1FE2220D3030D00C49D93 /* ico-find.png */; };
+		2DB1FE2520D33C6600C49D93 /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1FE2420D33C6600C49D93 /* VenueDetailViewController.swift */; };
 		2DC4FAC720CE181E0026E41E /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4FAC620CE181E0026E41E /* VenueViewController.swift */; };
 		40DA3F6FC5B2870B1054596E /* Pods_MeetNPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044CCFC3BBE9DFC47C549431 /* Pods_MeetNPlay.framework */; };
 		F3C93F5728292F91516C3EBA /* Pods_MeetNPlayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED86307CD435EC7357A0332 /* Pods_MeetNPlayUITests.framework */; };
@@ -83,6 +87,10 @@
 		2D8E968420C78C6300B97D3B /* user_male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_male.png; sourceTree = "<group>"; };
 		2D8E968620C7CC7B00B97D3B /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		2D8E968820C8D64C00B97D3B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		2DB1FE1E20D2F42100C49D93 /* PlayerMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMapViewController.swift; sourceTree = "<group>"; };
+		2DB1FE2020D3005500C49D93 /* VenueMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueMapViewController.swift; sourceTree = "<group>"; };
+		2DB1FE2220D3030D00C49D93 /* ico-find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-find.png"; sourceTree = "<group>"; };
+		2DB1FE2420D33C6600C49D93 /* VenueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
 		2DC4FAC620CE181E0026E41E /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		5E99244D4E96BBE7AE2AC90D /* Pods-MeetNPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetNPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetNPlay/Pods-MeetNPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		7B82019FE3C03034A5B9450B /* Pods-MeetNPlayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetNPlayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetNPlayUITests/Pods-MeetNPlayUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,12 +161,16 @@
 				2D8E967E20C7795F00B97D3B /* ProfileViewController.swift */,
 				2D8E968620C7CC7B00B97D3B /* LobbyViewController.swift */,
 				2D8E968820C8D64C00B97D3B /* PlayerViewController.swift */,
+				2DB1FE1E20D2F42100C49D93 /* PlayerMapViewController.swift */,
 				2DC4FAC620CE181E0026E41E /* VenueViewController.swift */,
+				2DB1FE2020D3005500C49D93 /* VenueMapViewController.swift */,
+				2DB1FE2420D33C6600C49D93 /* VenueDetailViewController.swift */,
 				2D3463DA20C0CE9300424B45 /* Main.storyboard */,
 				2D3463DD20C0CE9400424B45 /* Assets.xcassets */,
 				2D3463DF20C0CE9400424B45 /* LaunchScreen.storyboard */,
 				2D34640E20C0EEF900424B45 /* GoogleService-Info.plist */,
 				2D3463E220C0CE9400424B45 /* Info.plist */,
+				2DB1FE2220D3030D00C49D93 /* ico-find.png */,
 				2D8E968420C78C6300B97D3B /* user_male.png */,
 				2D8E968220C78AD800B97D3B /* menu@3x.png */,
 				2D8E967C20C7779400B97D3B /* featured-content-messages-icon_2x.png */,
@@ -327,6 +339,7 @@
 				2D34640F20C0EEFA00424B45 /* GoogleService-Info.plist in Resources */,
 				2D8E967D20C7779500B97D3B /* featured-content-messages-icon_2x.png in Resources */,
 				2D34640920C0D24100424B45 /* gaurd.png in Resources */,
+				2DB1FE2320D3030E00C49D93 /* ico-find.png in Resources */,
 				2D34640D20C0E6F100424B45 /* MeetNPlay2.png in Resources */,
 				2D8E968320C78ADB00B97D3B /* menu@3x.png in Resources */,
 				2D8E967B20C7758100B97D3B /* iphone-phone-call-icon.png in Resources */,
@@ -437,14 +450,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB1FE2520D33C6600C49D93 /* VenueDetailViewController.swift in Sources */,
 				2D77F57820C616B9004CC830 /* User.swift in Sources */,
 				2D3C16CE20C234DA002194AF /* SignUpViewController.swift in Sources */,
+				2DB1FE1F20D2F42100C49D93 /* PlayerMapViewController.swift in Sources */,
 				2D8E967F20C7795F00B97D3B /* ProfileViewController.swift in Sources */,
 				2D8E968920C8D64C00B97D3B /* PlayerViewController.swift in Sources */,
 				2D8E968720C7CC7B00B97D3B /* LobbyViewController.swift in Sources */,
 				2D3463D920C0CE9300424B45 /* LoginViewController.swift in Sources */,
 				2DC4FAC720CE181E0026E41E /* VenueViewController.swift in Sources */,
 				2D3463D720C0CE9300424B45 /* AppDelegate.swift in Sources */,
+				2DB1FE2120D3005500C49D93 /* VenueMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
